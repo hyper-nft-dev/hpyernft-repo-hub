@@ -406,11 +406,11 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ## Links
 
-- [Website](https://www.hypernft.io/)
-- [GitHub Repository](https://github.com/hypernft/hypernft)
-- [Twitter](https://twitter.com/HyperNFT)
-- [Documentation](https://docs.hypernft.io/)
-- [NPM Package](https://www.npmjs.com/package/hypernft)
+- Website: [hypernft.io](https://www.hypernft.io/)
+- GitHub: [hypernft/hypernft](https://github.com/hypernft/hypernft)
+- Twitter: [@HyperNFT](https://twitter.com/HyperNFT)
+- Documentation: [docs.hypernft.io](https://docs.hypernft.io/)
+- NPM: [hypernft](https://www.npmjs.com/package/hypernft)
 
 ---
 
