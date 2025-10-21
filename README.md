@@ -266,13 +266,35 @@ Modern, responsive interface with real-time generation preview and minting statu
 
 ## Technology Stack
 
-- **Frontend:** React 18, TypeScript 5.2
-- **Blockchain:** Solana Web3.js, Anchor Framework, Metaplex SDK
-- **AI/ML:** Custom diffusion models, CLIP embeddings
-- **Storage:** Arweave, IPFS
-- **Build Tools:** Webpack 5, Babel, PostCSS
-- **Testing:** Jest, React Testing Library
-- **Linting:** ESLint, Prettier
+### Frontend
+- React 18.2 with TypeScript 5.2
+- React Hooks for state management
+- CSS Modules with PostCSS
+- Chrome Extension APIs (Manifest V3)
+
+### Blockchain
+- Solana Web3.js v1.87+
+- Anchor Framework for program interaction
+- Metaplex Token Metadata v1.1
+- Metaplex Candy Machine v3
+
+### AI/ML
+- Latent Diffusion Models (LDM-XL)
+- CLIP for prompt encoding
+- Custom-trained style adapters
+- TensorFlow.js for client-side inference
+
+### Storage
+- Arweave for permanent data storage
+- IPFS with Pinata for redundancy
+- CDN caching layer
+
+### Development Tools
+- Webpack 5 for bundling
+- Babel for transpilation
+- Jest with React Testing Library
+- ESLint with TypeScript support
+- Prettier for code formatting
 
 ## Contributing
 
