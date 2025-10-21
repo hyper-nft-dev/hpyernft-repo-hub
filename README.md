@@ -200,6 +200,32 @@ npm run watch
 2. Enable Developer mode
 3. Click "Load unpacked" and select `dist/` folder
 
+### Basic Usage
+
+```typescript
+import { HyperNFT } from 'hypernft';
+
+const hypernft = new HyperNFT({
+  apiKey: 'your-api-key',
+  network: 'mainnet-beta'
+});
+
+// Generate NFT
+const result = await hypernft.generate({
+  prompt: 'cyberpunk samurai warrior',
+  style: 'cyberpunk',
+  resolution: '1024x1024'
+});
+
+// Mint to Solana
+const mint = await hypernft.mint({
+  metadata: result.metadata,
+  wallet: yourWalletAddress
+});
+
+console.log('Minted NFT:', mint.signature);
+```
+
 ## Documentation
 
 ### Technical Documentation
