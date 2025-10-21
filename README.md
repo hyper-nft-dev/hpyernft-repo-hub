@@ -306,6 +306,23 @@ Modern, responsive interface with real-time generation preview and minting statu
 - ESLint with TypeScript support
 - Prettier for code formatting
 
+## FAQ
+
+**Q: What blockchains are supported?**  
+A: Currently Solana mainnet and devnet. Support for other chains is planned.
+
+**Q: How long does NFT generation take?**  
+A: Typically 8-15 seconds for generation, plus 5-10 seconds for minting.
+
+**Q: Can I use my own AI models?**  
+A: Enterprise plans support custom model fine-tuning and LoRA adapters.
+
+**Q: What is the cost per NFT?**  
+A: Generation costs vary by resolution. Solana minting fees are ~0.01 SOL per NFT.
+
+**Q: Are generated NFTs unique?**  
+A: Yes, each generation uses randomized seeds unless explicitly specified.
+
 ## Contributing
 
 We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
