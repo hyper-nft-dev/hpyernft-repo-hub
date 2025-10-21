@@ -119,11 +119,13 @@ For large-scale NFT collections, the system supports parallelized uploads, using
 The HyperNFT AI Engine is trained using a mixture of curated NFT datasets and art diffusion techniques. It includes multiple fine-tuned submodels optimized for different aesthetics and artistic directions.
 
 **Model Architecture:**
-- **Base:** Latent Diffusion (LDM-XL)
-- **Training Set:** 12M NFT + Artworks dataset (cleaned for duplication and bias)
-- **Optimizations:** CLIP-guided prompt conditioning, CFG scaling, and token reweighting
-- **Supported Styles:** 3D realism, abstract, anime, pixel art, vaporwave, cyberpunk, and minimalism
-- **Output:** PNG (transparent and non-transparent), WebP
+- **Base Model:** Latent Diffusion (LDM-XL)
+- **Training Dataset:** 12M NFT + Artworks dataset (cleaned for duplication and bias)
+- **Optimization Techniques:** CLIP-guided prompt conditioning, CFG scaling, and token reweighting
+- **Supported Artistic Styles:** 3D realism, abstract, anime, pixel art, vaporwave, cyberpunk, and minimalism
+- **Output Formats:** PNG (with alpha channel support), WebP, JPEG
+- **Maximum Resolution:** 2048x2048 pixels
+- **Inference Time:** 8-15 seconds per image (depending on complexity)
 
 Each model can be further customized or fine-tuned for private use cases (via model adapters or LoRA).
 
