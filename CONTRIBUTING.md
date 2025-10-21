@@ -91,6 +91,13 @@ The extension follows a modular architecture:
 - **Popup**: Main user interface
 - **Options**: Configuration settings
 
+## Reporting Issues
+
+Please use GitHub Issues to report bugs or request features. Include:
+- Clear description
+- Steps to reproduce
+- Expected vs actual behavior
+
 ## Questions?
 
 Feel free to open an issue for questions or join our Discord community.
