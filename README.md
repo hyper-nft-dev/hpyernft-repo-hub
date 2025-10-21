@@ -415,3 +415,7 @@ MIT License - see [LICENSE](LICENSE) file for details.
 ---
 
 **Built for creators. Powered by AI. Secured by Solana.**
+
+---
+
+Made with ❤️ by the HyperNFT Team
