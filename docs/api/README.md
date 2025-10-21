@@ -2,12 +2,12 @@
 
 ## Overview
 
-The HyperNFT nft.generator API provides comprehensive endpoints for interacting with Solana blockchain data, NFT Generation, and trading signals. All endpoints are designed for high performance and real-time data access.
+The HyperNFT API provides comprehensive endpoints for AI-powered NFT generation, Solana blockchain minting, and storage management. All endpoints are designed for high performance and real-time processing.
 
 ## Base URL
 
 ```
-https://api.HyperNFT-bot.com/v1
+https://api.hypernft.io/v1
 ```
 
 ## Authentication
@@ -30,24 +30,23 @@ Authorization: Bearer YOUR_API_KEY
 
 ### NFT Generation
 
-#### Track Wallet
-Monitor a specific Solana wallet for transactions and balance changes.
+#### Generate NFT
+Generate AI-powered NFT artwork from text prompts.
 
 ```http
-POST /wallets/track
+POST /generate
 ```
 
 **Request Body:**
 ```json
 {
-  "address": "DjVE6JNiYqPL2QXyCUUh8rNjHrbz6hXHNYt99MQ59qw1",
-  "alerts": {
-    "balance_change": true,
-    "new_tokens": true,
-    "large_transactions": true,
-    "threshold": 1000
-  },
-  "webhook_url": "https://your-webhook.com/alerts"
+  "prompt": "futuristic cyberpunk cityscape with neon lights",
+  "negative_prompt": "low quality, blurry",
+  "style": "cyberpunk",
+  "resolution": "1024x1024",
+  "cfg_scale": 7.5,
+  "steps": 50,
+  "seed": 123456
 }
 ```
 
@@ -55,18 +54,18 @@ POST /wallets/track
 ```json
 {
   "success": true,
-  "wallet_id": "track_123456",
-  "address": "DjVE6JNiYqPL2QXyCUUh8rNjHrbz6hXHNYt99MQ59qw1",
-  "status": "active",
+  "job_id": "gen_123456",
+  "status": "processing",
+  "estimated_time": 15,
   "created_at": "2025-01-01T00:00:00Z"
 }
 ```
 
-#### Get Wallet Details
-Retrieve comprehensive information about a tracked wallet.
+#### Get Generation Status
+Retrieve the status and result of an NFT generation job.
 
 ```http
-GET /wallets/{wallet_id}
+GET /generate/{job_id}
 ```
 
 **Response:**
