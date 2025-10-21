@@ -390,6 +390,19 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 
 MIT License - see [LICENSE](LICENSE) file for details.
 
+## Community & Support
+
+### Get Help
+- Discord: [Join our community](https://discord.gg/hypernft)
+- Documentation: [docs.hypernft.io](https://docs.hypernft.io/)
+- Email Support: support@hypernft.io
+- GitHub Issues: [Report bugs](https://github.com/hypernft/hypernft/issues)
+
+### Stay Updated
+- Twitter: [@HyperNFT](https://twitter.com/HyperNFT)
+- Blog: [blog.hypernft.io](https://blog.hypernft.io/)
+- Newsletter: Subscribe at [hypernft.io](https://www.hypernft.io/)
+
 ## Links
 
 - [Website](https://www.hypernft.io/)
