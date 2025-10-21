@@ -6,9 +6,10 @@ Thank you for your interest in contributing to HyperNFT! This document provides 
 
 ### Prerequisites
 
-- Node.js 18+ 
-- npm or yarn
-- Chrome browser for testing
+- Node.js 16.0.0 or higher
+- npm 8.0.0 or higher
+- Chrome browser 88+ for testing
+- Solana CLI (optional)
 
 ### Installation
 
