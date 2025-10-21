@@ -86,14 +86,20 @@ Metadata is stored permanently on Arweave, ensuring immutability and long-term a
 HyperNFT leverages Solana's fast and low-cost transactions to mint NFTs instantly. It integrates with Metaplex's Token Metadata Program, Candy Machine v3, and Compressed NFTs (cNFTs) to provide flexibility for both single and mass minting.
 
 **Supported Operations:**
-- Single NFT minting
-- Multi-NFT batch minting
-- Compressed NFT creation (via Solana state compression)
-- Dynamic NFT updates via off-chain metadata references
-- Royalty configuration (basis points)
-- Collection verification
+- Single NFT minting with instant confirmation
+- Multi-NFT batch minting (up to 100 NFTs per batch)
+- Compressed NFT creation via Solana state compression
+- Dynamic NFT updates through off-chain metadata references
+- Flexible royalty configuration (0-10% basis points)
+- Automatic collection verification and grouping
+- Master edition and limited edition support
 
-HyperNFT's minting layer uses the latest Solana SDKs (Anchor & Solana-Web3.js) for wallet interactions, signature validation, and on-chain execution.
+**Technical Implementation:**
+- Built with Solana SDKs (Anchor Framework & Solana-Web3.js)
+- Phantom, Solflare, and Backpack wallet integration
+- Transaction retry logic with exponential backoff
+- Gas optimization for cost-efficient minting
+- Real-time transaction status tracking
 
 ### 4. Storage and Decentralization
 
