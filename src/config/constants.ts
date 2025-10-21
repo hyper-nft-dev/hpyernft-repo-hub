@@ -1,5 +1,5 @@
 /**
- * HyperNFT nft.generator - Constants
+ * HyperNFT - Application Constants
  * Application-wide constants and enumerations
  */
 
