@@ -32,6 +32,14 @@ HyperNFT merges AI generation with Solana-native NFT infrastructure, providing a
 
 The platform abstracts away all the technical layers of image generation, metadata assembly, and blockchain interactions, allowing users to focus purely on creativity. Behind the scenes, HyperNFT integrates multiple services working in synergy:
 
+**How It Works:**
+1. User enters a text prompt describing desired artwork
+2. AI model processes prompt and generates unique image
+3. System creates Metaplex-compliant metadata
+4. Image and metadata uploaded to Arweave/IPFS
+5. NFT minted on Solana blockchain
+6. User receives NFT in their wallet
+
 - **AI Model Engine** - processes text prompts and generates unique, high-resolution artwork based on latent diffusion architectures
 - **Metadata Composer** - automatically constructs the JSON metadata required by the Solana NFT standard (Metaplex Metadata Standard)
 - **Minting Layer** - connects to Solana's runtime to mint tokens using the latest SPL and Metaplex token standards
