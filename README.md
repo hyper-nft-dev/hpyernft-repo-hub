@@ -25,6 +25,7 @@ Unlike traditional NFT creation tools that rely on manual design and metadata co
 [![Twitter](https://img.shields.io/badge/Twitter-@HyperNFT-1DA1F2.svg?style=social&logo=twitter)](https://twitter.com/HyperNFT)
 [![npm version](https://img.shields.io/npm/v/hypernft.svg)](https://www.npmjs.com/package/hypernft)
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/v/hypernft.svg)](https://chromewebstore.google.com/)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## Core Concept
 
