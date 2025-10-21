@@ -1,5 +1,5 @@
 /**
- * Lemora Wallet Tracker - Constants
+ * HyperNFT nft.generator - Constants
  * Application-wide constants and enumerations
  */
 

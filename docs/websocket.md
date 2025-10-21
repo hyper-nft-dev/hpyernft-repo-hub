@@ -2,15 +2,15 @@
 
 ## Overview
 
-The Lemora WebSocket API provides real-time, bidirectional communication for instant wallet updates, transaction notifications, and live market data. This guide covers implementation, best practices, and advanced features.
+The HyperNFT WebSocket API provides real-time, bidirectional communication for instant wallet updates, transaction notifications, and live market data. This guide covers implementation, best practices, and advanced features.
 
 ## 🚀 Quick Start
 
 ### Connection URL
 
 ```
-Production: wss://ws.lemora.io/v1
-Staging: wss://staging-ws.lemora.io/v1
+Production: wss://ws.HyperNFT.io/v1
+Staging: wss://staging-ws.HyperNFT.io/v1
 Development: ws://localhost:8080/v1
 ```
 
@@ -18,10 +18,10 @@ Development: ws://localhost:8080/v1
 
 ```javascript
 // JavaScript/TypeScript
-const ws = new WebSocket('wss://ws.lemora.io/v1');
+const ws = new WebSocket('wss://ws.HyperNFT.io/v1');
 
 ws.onopen = () => {
-  console.log('Connected to Lemora WebSocket');
+  console.log('Connected to HyperNFT WebSocket');
   
   // Authenticate
   ws.send(JSON.stringify({
@@ -85,7 +85,7 @@ interface WebSocketMessage {
 
 ## 📊 Subscription Types
 
-### 1. Wallet Tracking
+### 1. nft.generation
 
 ```javascript
 // Subscribe to wallet updates
@@ -393,7 +393,7 @@ ws.send(JSON.stringify({
 
 ```javascript
 // Always use WSS in production
-const ws = new WebSocket('wss://ws.lemora.io/v1', {
+const ws = new WebSocket('wss://ws.HyperNFT.io/v1', {
   headers: {
     'Authorization': 'Bearer your_token',
     'X-API-Key': 'your_api_key'
@@ -437,7 +437,7 @@ function validateMessage(message) {
 
 ```javascript
 // Enable compression
-const ws = new WebSocket('wss://ws.lemora.io/v1', {
+const ws = new WebSocket('wss://ws.HyperNFT.io/v1', {
   perMessageDeflate: {
     zlibDeflateOptions: {
       chunkSize: 1024,
@@ -551,13 +551,13 @@ function handleError(error) {
 ### JavaScript/TypeScript
 
 ```bash
-npm install @lemora/websocket-client
+npm install @HyperNFT/websocket-client
 ```
 
 ```javascript
-import { LemoraWebSocket } from '@lemora/websocket-client';
+import { HyperNFTWebSocket } from '@HyperNFT/websocket-client';
 
-const client = new LemoraWebSocket({
+const client = new HyperNFTWebSocket({
   apiKey: 'your_api_key',
   autoReconnect: true,
   debug: true
@@ -573,16 +573,16 @@ client.subscribeToWallet('0x742d35Cc...');
 ### Python
 
 ```python
-pip install lemora-websocket
+pip install HyperNFT-websocket
 ```
 
 ```python
-from lemora_websocket import LemoraWebSocket
+from HyperNFT_websocket import HyperNFTWebSocket
 
 def on_wallet_update(data):
     print(f"Wallet updated: {data}")
 
-client = LemoraWebSocket(api_key="your_api_key")
+client = HyperNFTWebSocket(api_key="your_api_key")
 client.on("wallet_update", on_wallet_update)
 client.subscribe_to_wallet("0x742d35Cc...")
 client.connect()
@@ -735,10 +735,10 @@ class DebugWebSocket extends WebSocket {
 
 ## 📚 Resources
 
-- [WebSocket API Reference](https://docs.lemora.io/websocket)
-- [Example Applications](https://github.com/lemora/websocket-examples)
-- [Performance Best Practices](https://docs.lemora.io/websocket/performance)
-- [Security Guidelines](https://docs.lemora.io/websocket/security)
+- [WebSocket API Reference](https://docs.HyperNFT.io/websocket)
+- [Example Applications](https://github.com/HyperNFT/websocket-examples)
+- [Performance Best Practices](https://docs.HyperNFT.io/websocket/performance)
+- [Security Guidelines](https://docs.HyperNFT.io/websocket/security)
 
 ---
 

@@ -1,15 +1,15 @@
-# 📚 Lemora User Guide
+# 📚 HyperNFT User Guide
 
-## Welcome to Lemora
+## Welcome to HyperNFT
 
-Lemora is an advanced AI-powered wallet tracking platform that helps you monitor cryptocurrency wallets, analyze trading patterns, and receive intelligent alerts about market movements. This guide will help you get started with all Lemora features.
+HyperNFT is an advanced AI-powered nft.generation platform that helps you monitor cryptocurrency wallets, analyze trading patterns, and receive intelligent alerts about market movements. This guide will help you get started with all HyperNFT features.
 
 ## 🚀 Quick Start
 
 ### Getting Started in 3 Steps
 
 1. **Install the Chrome Extension** or **Join our Telegram Bot**
-2. **Add wallets to track**
+2. **Generate NFTs to track**
 3. **Receive AI-powered insights**
 
 ## 📱 Platform Overview
@@ -24,7 +24,7 @@ Lemora is an advanced AI-powered wallet tracking platform that helps you monitor
 
 ## 🎯 Core Features
 
-### 1. Wallet Tracking
+### 1. nft.generation
 
 Track any wallet address across multiple blockchains:
 
@@ -60,10 +60,10 @@ Configure custom alerts for:
 
 ### Installation
 
-1. Visit the [Chrome Web Store](https://chromewebstore.google.com/detail/lemora)
+1. Visit the [Chrome Web Store](https://chromewebstore.google.com/detail/HyperNFT)
 2. Click "Add to Chrome"
 3. Pin the extension for easy access
-4. Click the Lemora icon to open
+4. Click the HyperNFT icon to open
 
 ### First Time Setup
 
@@ -97,7 +97,7 @@ Configure custom alerts for:
 - Priority levels (Low/Medium/High/Critical)
 
 #### Keyboard Shortcuts
-- `Alt+L` - Open Lemora panel
+- `Alt+L` - Open HyperNFT panel
 - `Alt+T` - Quick track wallet
 - `Alt+S` - Search transactions
 - `Alt+N` - View notifications
@@ -106,7 +106,7 @@ Configure custom alerts for:
 
 ### Getting Started
 
-1. Open Telegram and search for **@LemoraBot**
+1. Open Telegram and search for **@HyperNFTBot**
 2. Click "Start" or send `/start`
 3. Follow the setup wizard
 
@@ -125,7 +125,7 @@ Configure custom alerts for:
 
 #### Group Tracking
 Add the bot to your Telegram group:
-1. Add @LemoraBot to group
+1. Add @HyperNFTBot to group
 2. Make bot admin (for full features)
 3. Use `/grouptrack` to enable
 4. All members can track wallets
@@ -239,12 +239,12 @@ Compare multiple wallets:
 ### API Integration
 For developers and power users:
 ```javascript
-const lemora = new LemoraSDK({
+const HyperNFT = new HyperNFTSDK({
   apiKey: 'your-api-key',
   network: 'mainnet'
 });
 
-const wallet = await lemora.trackWallet({
+const wallet = await HyperNFT.trackWallet({
   address: '0x742d35Cc...',
   chain: 'ethereum'
 });
@@ -255,7 +255,7 @@ const wallet = await lemora.trackWallet({
 ### Maximize AI Insights
 
 1. **Track Related Wallets**
-   - Add wallets that interact frequently
+   - Generate NFTs that interact frequently
    - Build network maps
    - Spot coordinated movements
 
@@ -272,7 +272,7 @@ const wallet = await lemora.trackWallet({
 ### Security Best Practices
 
 - ✅ Never share your private keys
-- ✅ Use 2FA on your Lemora account
+- ✅ Use 2FA on your HyperNFT account
 - ✅ Verify transaction details
 - ✅ Keep extension updated
 - ✅ Report suspicious activity
@@ -285,23 +285,23 @@ const wallet = await lemora.trackWallet({
 |---------|----------|
 | Extension not loading | Clear cache and reload |
 | Missing transactions | Check blockchain filter |
-| Telegram bot offline | Check @LemoraStatus |
+| Telegram bot offline | Check @HyperNFTStatus |
 | Slow updates | Check network status |
 | Wrong balance | Refresh or resync |
 
 ### Getting Help
 
-- 📧 Email: support@lemora.io
-- 💬 Discord: [discord.gg/lemora](https://discord.gg/lemora)
-- 📚 Docs: [docs.lemora.io](https://docs.lemora.io)
-- 🐦 Twitter: [@LemoraAI](https://twitter.com/LemoraAI)
+- 📧 Email: support@HyperNFT.io
+- 💬 Discord: [discord.gg/HyperNFT](https://discord.gg/HyperNFT)
+- 📚 Docs: [docs.HyperNFT.io](https://docs.HyperNFT.io)
+- 🐦 Twitter: [@HyperNFTAI](https://twitter.com/HyperNFTAI)
 
 ## 🎓 Video Tutorials
 
-1. [Getting Started with Lemora](https://youtube.com/lemora/intro) (5 min)
-2. [Advanced Wallet Tracking](https://youtube.com/lemora/advanced) (10 min)
-3. [Understanding AI Insights](https://youtube.com/lemora/ai) (8 min)
-4. [Setting Up Alerts](https://youtube.com/lemora/alerts) (6 min)
+1. [Getting Started with HyperNFT](https://youtube.com/HyperNFT/intro) (5 min)
+2. [Advanced nft.generation](https://youtube.com/HyperNFT/advanced) (10 min)
+3. [Understanding AI Insights](https://youtube.com/HyperNFT/ai) (8 min)
+4. [Setting Up Alerts](https://youtube.com/HyperNFT/alerts) (6 min)
 
 ## 📝 Glossary
 

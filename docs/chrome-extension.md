@@ -1,8 +1,8 @@
-# 🌐 Lemora Chrome Extension Guide
+# 🌐 HyperNFT Chrome Extension Guide
 
 ## Overview
 
-The Lemora Chrome Extension is your gateway to real-time wallet tracking and AI-powered crypto insights directly from your browser. This comprehensive guide covers installation, configuration, and advanced features.
+The HyperNFT Chrome Extension is your gateway to real-time nft.generation and AI-powered crypto insights directly from your browser. This comprehensive guide covers installation, configuration, and advanced features.
 
 ## 🚀 Installation
 
@@ -17,7 +17,7 @@ The Lemora Chrome Extension is your gateway to real-time wallet tracking and AI-
 
 1. **Chrome Web Store Method** (Recommended)
    ```
-   1. Visit: https://chromewebstore.google.com/detail/lemora
+   1. Visit: https://chromewebstore.google.com/detail/HyperNFT
    2. Click "Add to Chrome"
    3. Confirm "Add Extension" in popup
    4. Extension icon appears in toolbar
@@ -26,7 +26,7 @@ The Lemora Chrome Extension is your gateway to real-time wallet tracking and AI-
 2. **Manual Installation** (Developer Mode)
    ```bash
    # Clone repository
-   git clone https://github.com/lemora/chrome-extension
+   git clone https://github.com/HyperNFT/chrome-extension
    
    # Install dependencies
    cd chrome-extension
@@ -44,7 +44,7 @@ The Lemora Chrome Extension is your gateway to real-time wallet tracking and AI-
 
 ## 🎯 Core Features
 
-### Wallet Tracking Dashboard
+### nft.generation Dashboard
 
 The main dashboard provides:
 
@@ -187,7 +187,7 @@ Injects features into supported sites:
 
 | Shortcut | Action |
 |----------|--------|
-| `Alt + L` | Open Lemora popup |
+| `Alt + L` | Open HyperNFT popup |
 | `Alt + T` | Quick track wallet |
 | `Alt + A` | View all alerts |
 | `Alt + S` | Search transactions |
@@ -209,7 +209,7 @@ Access via `Ctrl+Shift+P`:
 
 Right-click options:
 
-- **On any Ethereum address**: "Track with Lemora"
+- **On any Ethereum address**: "Track with HyperNFT"
 - **On transaction hash**: "Analyze Transaction"
 - **On token symbol**: "Track Token Holders"
 
@@ -364,19 +364,19 @@ chrome.runtime.getBackgroundPage(bg => {
 ## 📚 Resources
 
 ### Documentation
-- [API Reference](https://docs.lemora.io/api)
-- [Video Tutorials](https://youtube.com/lemora)
-- [GitHub Repository](https://github.com/lemora/chrome-extension)
+- [API Reference](https://docs.HyperNFT.io/api)
+- [Video Tutorials](https://youtube.com/HyperNFT)
+- [GitHub Repository](https://github.com/HyperNFT/chrome-extension)
 
 ### Support
-- 📧 Email: extension@lemora.io
-- 💬 Discord: [discord.gg/lemora](https://discord.gg/lemora)
-- 🐛 Bug Reports: [GitHub Issues](https://github.com/lemora/chrome-extension/issues)
+- 📧 Email: extension@HyperNFT.io
+- 💬 Discord: [discord.gg/HyperNFT](https://discord.gg/HyperNFT)
+- 🐛 Bug Reports: [GitHub Issues](https://github.com/HyperNFT/chrome-extension/issues)
 
 ### Updates
-- Follow [@LemoraAI](https://twitter.com/LemoraAI) for updates
-- Join our [Telegram](https://t.me/lemora) for announcements
-- Check [Changelog](https://github.com/lemora/chrome-extension/blob/main/CHANGELOG.md)
+- Follow [@HyperNFTAI](https://twitter.com/HyperNFTAI) for updates
+- Join our [Telegram](https://t.me/HyperNFT) for announcements
+- Check [Changelog](https://github.com/HyperNFT/chrome-extension/blob/main/CHANGELOG.md)
 
 ## 🔄 Version History
 

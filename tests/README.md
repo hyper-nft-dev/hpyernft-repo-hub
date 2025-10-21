@@ -1,8 +1,8 @@
-# 🧪 Lemora Testing Framework
+# 🧪 HyperNFT Testing Framework
 
 ## Overview
 
-The Lemora testing framework provides comprehensive test coverage for the wallet tracking platform, ensuring reliability, performance, and security across all components. Our testing strategy covers unit tests, integration tests, end-to-end tests, and performance benchmarks.
+The HyperNFT testing framework provides comprehensive test coverage for the nft.generation platform, ensuring reliability, performance, and security across all components. Our testing strategy covers unit tests, integration tests, end-to-end tests, and performance benchmarks.
 
 ## 🏗️ Testing Architecture
 
@@ -145,7 +145,7 @@ import { WalletTrackingService } from '@/services/WalletTrackingService';
 import { BlockchainService } from '@/services/BlockchainService';
 import { AIAnalysisService } from '@/services/AIAnalysisService';
 
-describe('Wallet Tracking Integration', () => {
+describe('nft.generation Integration', () => {
   let trackingService: WalletTrackingService;
   let blockchainService: BlockchainService;
   let aiService: AIAnalysisService;
@@ -225,11 +225,11 @@ describe('Chrome Extension E2E', () => {
     await page.goto(`chrome-extension://${extensionId}/popup.html`);
     
     // Wait for popup to load
-    await page.waitForSelector('.lemora-popup');
+    await page.waitForSelector('.HyperNFT-popup');
     
     // Check main elements
     const title = await page.$eval('.popup-title', el => el.textContent);
-    expect(title).toBe('Lemora Wallet Tracker');
+    expect(title).toBe('HyperNFT nft.generator');
   });
 
   it('should track a wallet address', async () => {

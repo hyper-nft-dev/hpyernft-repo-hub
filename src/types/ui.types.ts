@@ -1,5 +1,5 @@
 /**
- * Lemora Wallet Tracker - UI Type Definitions
+ * HyperNFT nft.generator - UI Type Definitions
  * Types for user interface components and interactions
  */
 

@@ -2,7 +2,7 @@
 
 ## Overview
 
-This guide provides comprehensive instructions for deploying Lemora Wallet Tracker in different environments, from development to production. The application supports multiple deployment strategies including local development, staging, and production environments.
+This guide provides comprehensive instructions for deploying HyperNFT nft.generator in different environments, from development to production. The application supports multiple deployment strategies including local development, staging, and production environments.
 
 ## Prerequisites
 
@@ -43,8 +43,8 @@ Before deployment, ensure you have the following API keys:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/lemora-bot/lemora-bot.git
-   cd lemora-bot
+   git clone https://github.com/HyperNFT-bot/HyperNFT-bot.git
+   cd HyperNFT-bot
    ```
 
 2. **Install Dependencies**
@@ -149,7 +149,7 @@ Before deployment, ensure you have the following API keys:
    SENTRY_DSN=your_sentry_dsn_here
    
    # Security Settings
-   CORS_ORIGIN=https://lemora-bot.com
+   CORS_ORIGIN=https://HyperNFT-bot.com
    RATE_LIMIT_ENABLED=true
    MAX_REQUESTS_PER_MINUTE=60
    ```
@@ -174,7 +174,7 @@ Before deployment, ensure you have the following API keys:
    version: '3.8'
    
    services:
-     lemora-bot:
+     HyperNFT-bot:
        build:
          context: .
          dockerfile: Dockerfile
@@ -212,25 +212,25 @@ Before deployment, ensure you have the following API keys:
 
 3. **View Logs**
    ```bash
-   docker-compose logs -f lemora-bot
+   docker-compose logs -f HyperNFT-bot
    ```
 
 ### Single Container Deployment
 
 1. **Build Docker Image**
    ```bash
-   docker build -t lemora-bot:latest .
+   docker build -t HyperNFT-bot:latest .
    ```
 
 2. **Run Container**
    ```bash
    docker run -d \
-     --name lemora-bot \
+     --name HyperNFT-bot \
      -p 3000:3000 \
      -e NODE_ENV=production \
      -e HELIUS_API_KEY=your_api_key \
      --restart unless-stopped \
-     lemora-bot:latest
+     HyperNFT-bot:latest
    ```
 
 ## Cloud Deployment
@@ -242,7 +242,7 @@ Before deployment, ensure you have the following API keys:
 1. **Create Task Definition**
    ```json
    {
-     "family": "lemora-bot",
+     "family": "HyperNFT-bot",
      "networkMode": "awsvpc",
      "requiresCompatibilities": ["FARGATE"],
      "cpu": "512",
@@ -250,8 +250,8 @@ Before deployment, ensure you have the following API keys:
      "executionRoleArn": "arn:aws:iam::account:role/ecsTaskExecutionRole",
      "containerDefinitions": [
        {
-         "name": "lemora-bot",
-         "image": "your-account.dkr.ecr.region.amazonaws.com/lemora-bot:latest",
+         "name": "HyperNFT-bot",
+         "image": "your-account.dkr.ecr.region.amazonaws.com/HyperNFT-bot:latest",
          "portMappings": [
            {
              "containerPort": 3000,
@@ -267,13 +267,13 @@ Before deployment, ensure you have the following API keys:
          "secrets": [
            {
              "name": "HELIUS_API_KEY",
-             "valueFrom": "arn:aws:secretsmanager:region:account:secret:lemora-bot/api-keys"
+             "valueFrom": "arn:aws:secretsmanager:region:account:secret:HyperNFT-bot/api-keys"
            }
          ],
          "logConfiguration": {
            "logDriver": "awslogs",
            "options": {
-             "awslogs-group": "/ecs/lemora-bot",
+             "awslogs-group": "/ecs/HyperNFT-bot",
              "awslogs-region": "us-east-1",
              "awslogs-stream-prefix": "ecs"
            }
@@ -286,9 +286,9 @@ Before deployment, ensure you have the following API keys:
 2. **Deploy with AWS CLI**
    ```bash
    aws ecs create-service \
-     --cluster lemora-cluster \
-     --service-name lemora-bot-service \
-     --task-definition lemora-bot:1 \
+     --cluster HyperNFT-cluster \
+     --service-name HyperNFT-bot-service \
+     --task-definition HyperNFT-bot:1 \
      --desired-count 2 \
      --launch-type FARGATE \
      --network-configuration "awsvpcConfiguration={subnets=[subnet-12345,subnet-67890],securityGroups=[sg-12345],assignPublicIp=ENABLED}"
@@ -304,7 +304,7 @@ Before deployment, ensure you have the following API keys:
 
 2. **Create serverless.yml**
    ```yaml
-   service: lemora-bot
+   service: HyperNFT-bot
    
    provider:
      name: aws
@@ -312,7 +312,7 @@ Before deployment, ensure you have the following API keys:
      region: us-east-1
      environment:
        NODE_ENV: production
-       HELIUS_API_KEY: ${ssm:/lemora-bot/helius-api-key}
+       HELIUS_API_KEY: ${ssm:/HyperNFT-bot/helius-api-key}
    
    functions:
      api:
@@ -339,18 +339,18 @@ Before deployment, ensure you have the following API keys:
 
 1. **Build and Push to Container Registry**
    ```bash
-   gcloud builds submit --tag gcr.io/PROJECT_ID/lemora-bot
+   gcloud builds submit --tag gcr.io/PROJECT_ID/HyperNFT-bot
    ```
 
 2. **Deploy to Cloud Run**
    ```bash
-   gcloud run deploy lemora-bot \
-     --image gcr.io/PROJECT_ID/lemora-bot \
+   gcloud run deploy HyperNFT-bot \
+     --image gcr.io/PROJECT_ID/HyperNFT-bot \
      --platform managed \
      --region us-central1 \
      --allow-unauthenticated \
      --set-env-vars NODE_ENV=production \
-     --set-secrets HELIUS_API_KEY=lemora-bot-secrets:latest
+     --set-secrets HELIUS_API_KEY=HyperNFT-bot-secrets:latest
    ```
 
 ### Azure Deployment
@@ -359,16 +359,16 @@ Before deployment, ensure you have the following API keys:
 
 1. **Create Resource Group**
    ```bash
-   az group create --name lemora-bot-rg --location eastus
+   az group create --name HyperNFT-bot-rg --location eastus
    ```
 
 2. **Deploy Container**
    ```bash
    az container create \
-     --resource-group lemora-bot-rg \
-     --name lemora-bot \
-     --image lemora-bot:latest \
-     --dns-name-label lemora-bot \
+     --resource-group HyperNFT-bot-rg \
+     --name HyperNFT-bot \
+     --image HyperNFT-bot:latest \
+     --dns-name-label HyperNFT-bot \
      --ports 3000 \
      --environment-variables NODE_ENV=production \
      --secure-environment-variables HELIUS_API_KEY=your_api_key
@@ -405,8 +405,8 @@ Before deployment, ensure you have the following API keys:
 
 3. **Store Listing Information**
    ```
-   Name: Lemora Wallet Tracker
-   Description: Advanced AI-Powered Trading Signals & Wallet Monitoring for Solana
+   Name: HyperNFT nft.generator
+   Description: Advanced AI-Powered Trading Signals & NFT Generation for Solana
    Category: Productivity
    Language: English
    ```
@@ -519,16 +519,16 @@ Before deployment, ensure you have the following API keys:
 Enable debug mode for detailed logging:
 
 ```bash
-export DEBUG=lemora:*
+export DEBUG=HyperNFT:*
 npm start
 ```
 
 ### Support
 
 For deployment support:
-- Email: devops@lemora-bot.com
+- Email: devops@HyperNFT-bot.com
 - Discord: #deployment-support
-- Documentation: https://docs.lemora-bot.com/deployment
+- Documentation: https://docs.HyperNFT-bot.com/deployment
 
 ## Security Considerations
 
@@ -566,4 +566,4 @@ npm run rollback:db -- --migration=20250101000000
 
 ---
 
-For additional deployment assistance, contact our DevOps team at devops@lemora-bot.com.
+For additional deployment assistance, contact our DevOps team at devops@HyperNFT-bot.com.

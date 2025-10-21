@@ -1,16 +1,16 @@
-# 🤖 Lemora Telegram Bot Guide
+# 🤖 HyperNFT Telegram Bot Guide
 
 ## Overview
 
-The Lemora Telegram Bot brings powerful wallet tracking and AI analysis directly to your Telegram chats. Track wallets, receive instant alerts, and analyze crypto movements without leaving Telegram.
+The HyperNFT Telegram Bot brings powerful nft.generation and AI analysis directly to your Telegram chats. Track wallets, receive instant alerts, and analyze crypto movements without leaving Telegram.
 
 ## 🚀 Getting Started
 
 ### Quick Setup
 
 1. **Find the Bot**
-   - Search for `@LemoraBot` in Telegram
-   - Or click: [https://t.me/LemoraBot](https://t.me/LemoraBot)
+   - Search for `@HyperNFTBot` in Telegram
+   - Or click: [https://t.me/HyperNFTBot](https://t.me/HyperNFTBot)
 
 2. **Start the Bot**
    ```
@@ -89,7 +89,7 @@ Examples:
 /setalert smart_money follow
 ```
 
-### Multi-Wallet Tracking
+### Multi-nft.generation
 
 Track multiple wallets with labels:
 
@@ -117,7 +117,7 @@ Track multiple wallets with labels:
 ### Adding Bot to Groups
 
 1. **Add to Group**
-   - Add @LemoraBot to your group
+   - Add @HyperNFTBot to your group
    - Make bot administrator (optional for full features)
 
 2. **Enable Group Tracking**
@@ -235,13 +235,13 @@ Connect external services:
 
 ```
 /api generate
-Your API Key: lemora_api_k3y_x7y8z9
+Your API Key: HyperNFT_api_k3y_x7y8z9
 
 /webhook set https://your-server.com/webhook
 Webhook configured ✅
 
 /connect metamask
-Connection link: https://lemora.io/connect/abc123
+Connection link: https://HyperNFT.io/connect/abc123
 ```
 
 ## 📱 Mobile Experience
@@ -251,7 +251,7 @@ Connection link: https://lemora.io/connect/abc123
 Use inline queries for fast access:
 
 ```
-@LemoraBot 0x742d...
+@HyperNFTBot 0x742d...
 ```
 
 ### Voice Commands (Beta)
@@ -294,7 +294,7 @@ Send voice messages with commands:
 ### Best Practices
 
 1. ✅ Never share sensitive information
-2. ✅ Verify bot username (@LemoraBot)
+2. ✅ Verify bot username (@HyperNFTBot)
 3. ✅ Use /deletedata before leaving
 4. ✅ Enable 2FA for added security
 5. ✅ Report suspicious activity
@@ -394,16 +394,16 @@ AI Insights: 3 opportunities detected
 
 ### Contact Options
 
-- 📧 Email: bot@lemora.io
-- 💬 Support Group: [t.me/LemoraSupport](https://t.me/LemoraSupport)
-- 🌐 Website: [lemora.io/support](https://lemora.io/support)
-- 🐦 Twitter: [@LemoraAI](https://twitter.com/LemoraAI)
+- 📧 Email: bot@HyperNFT.io
+- 💬 Support Group: [t.me/HyperNFTSupport](https://t.me/HyperNFTSupport)
+- 🌐 Website: [HyperNFT.io/support](https://HyperNFT.io/support)
+- 🐦 Twitter: [@HyperNFTAI](https://twitter.com/HyperNFTAI)
 
 ### Troubleshooting
 
 | Issue | Solution |
 |-------|----------|
-| Bot not responding | Check @LemoraStatus for updates |
+| Bot not responding | Check @HyperNFTStatus for updates |
 | Missing alerts | Verify /alerts settings |
 | Wrong data | Use /refresh to sync |
 | Slow responses | Check /status for performance |

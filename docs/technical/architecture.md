@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Lemora Wallet Tracker utilizes a modular architecture for scalability, maintainability, and performance. The system comprises several components, each responsible for specific functions.
+The HyperNFT nft.generator utilizes a modular architecture for scalability, maintainability, and performance. The system comprises several components, each responsible for specific functions.
 
 ---
 
@@ -56,7 +56,7 @@ The Lemora Wallet Tracker utilizes a modular architecture for scalability, maint
 
 ## Microservices
 
-### **Wallet Monitoring Service**
+### **NFT Generation Service**
 - Continuously monitors specified wallets for activity
 - Sends notifications based on predefined triggers and conditions
 
@@ -87,4 +87,4 @@ For developers interested in contributing, please refer to our [Contributing Gui
 
 ---
 
-For further information, contact us at support@lemora-bot.com.
+For further information, contact us at support@HyperNFT-bot.com.

@@ -1,5 +1,5 @@
 /**
- * Lemora Wallet Tracker - WebSocket Utils
+ * HyperNFT nft.generator - WebSocket Utils
  */
 
 export function connectWebSocket(url: string, protocols?: string | string[]): WebSocket {

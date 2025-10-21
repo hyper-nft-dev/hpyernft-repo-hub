@@ -1,5 +1,5 @@
 /**
- * Navigation System for Lemora Wallet Tracker
+ * Navigation System for HyperNFT nft.generator
  * Implements navigation logic and event handling
  */
 

@@ -2,12 +2,12 @@
 
 ## Overview
 
-The Lemora Wallet Tracker API provides comprehensive endpoints for interacting with Solana blockchain data, wallet monitoring, and trading signals. All endpoints are designed for high performance and real-time data access.
+The HyperNFT nft.generator API provides comprehensive endpoints for interacting with Solana blockchain data, NFT Generation, and trading signals. All endpoints are designed for high performance and real-time data access.
 
 ## Base URL
 
 ```
-https://api.lemora-bot.com/v1
+https://api.HyperNFT-bot.com/v1
 ```
 
 ## Authentication
@@ -28,7 +28,7 @@ Authorization: Bearer YOUR_API_KEY
 
 ## Core Endpoints
 
-### Wallet Monitoring
+### NFT Generation
 
 #### Track Wallet
 Monitor a specific Solana wallet for transactions and balance changes.
@@ -217,10 +217,10 @@ GET /signals
 
 ### Real-time Wallet Updates
 
-Connect to real-time wallet monitoring via WebSocket:
+Connect to real-time NFT Generation via WebSocket:
 
 ```javascript
-const ws = new WebSocket('wss://api.lemora-bot.com/v1/ws');
+const ws = new WebSocket('wss://api.HyperNFT-bot.com/v1/ws');
 
 ws.onopen = function() {
   // Subscribe to wallet updates
@@ -284,13 +284,13 @@ All API errors follow a consistent format:
 ### JavaScript/TypeScript
 
 ```bash
-npm install @lemora-bot/sdk
+npm install @HyperNFT-bot/sdk
 ```
 
 ```javascript
-import { LemoraAPI } from '@lemora-bot/sdk';
+import { HyperNFTAPI } from '@HyperNFT-bot/sdk';
 
-const api = new LemoraAPI({
+const api = new HyperNFTAPI({
   apiKey: 'your-api-key',
   environment: 'production' // or 'sandbox'
 });
@@ -308,13 +308,13 @@ const wallet = await api.wallets.track({
 ### Python
 
 ```bash
-pip install lemora-bot-sdk
+pip install HyperNFT-bot-sdk
 ```
 
 ```python
-from lemora_bot import LemoraAPI
+from HyperNFT_bot import HyperNFTAPI
 
-api = LemoraAPI(api_key='your-api-key')
+api = HyperNFTAPI(api_key='your-api-key')
 
 # Get trading signals
 signals = api.signals.get(confidence_min=0.8)
@@ -364,9 +364,9 @@ function verifyWebhook(payload, signature, secret) {
 
 For API support and questions:
 
-- Email: api-support@lemora-bot.com
+- Email: api-support@HyperNFT-bot.com
 - Discord: #api-support channel
-- Documentation: https://docs.lemora-bot.com
+- Documentation: https://docs.HyperNFT-bot.com
 
 ## Changelog
 
@@ -377,10 +377,10 @@ For API support and questions:
 
 ### v1.1.0 - 2024-12-15
 - Added transaction analysis endpoint
-- Enhanced wallet tracking capabilities
+- Enhanced nft.generation capabilities
 - Added webhook support
 
 ### v1.0.0 - 2024-12-01
 - Initial API release
-- Basic wallet monitoring
+- Basic NFT Generation
 - Real-time updates via WebSocket

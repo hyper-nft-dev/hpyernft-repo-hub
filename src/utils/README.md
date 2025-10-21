@@ -1,8 +1,8 @@
-# 🛠️ Lemora Utilities Library
+# 🛠️ HyperNFT Utilities Library
 
 ## Overview
 
-The utilities module provides essential helper functions, constants, and shared resources that power the Lemora wallet tracking ecosystem. These utilities ensure consistency, performance, and maintainability across both the Chrome extension and web application.
+The utilities module provides essential helper functions, constants, and shared resources that power the HyperNFT nft.generation ecosystem. These utilities ensure consistency, performance, and maintainability across both the Chrome extension and web application.
 
 ## 📊 Module Architecture
 
@@ -132,14 +132,14 @@ export function memoize<T extends (...args: any[]) => any>(
 
 ```typescript
 // error.utils.ts
-export class LemoraError extends Error {
+export class HyperNFTError extends Error {
   constructor(
     message: string,
     public code: ErrorCode,
     public context?: Record<string, any>
   ) {
     super(message);
-    this.name = 'LemoraError';
+    this.name = 'HyperNFTError';
   }
 }
 

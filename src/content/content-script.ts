@@ -1,4 +1,4 @@
-class LemoraContentScript {
+class HyperNFTContentScript {
   private observer: MutationObserver | null = null;
   private walletAddressPattern = /[1-9A-HJ-NP-Za-km-z]{32,44}/g;
   private detectedWallets: Set<string> = new Set();
@@ -32,7 +32,7 @@ class LemoraContentScript {
     // Inject floating widget if on supported sites
     this.injectFloatingWidget();
     
-    console.log('Lemora content script initialized');
+    console.log('HyperNFT content script initialized');
   }
 
   private detectWalletAddresses(): void {
@@ -103,7 +103,7 @@ class LemoraContentScript {
         if (index > 0) {
           // Create highlighted wallet address element
           const walletElement = document.createElement('span');
-          walletElement.className = 'lemora-wallet-highlight';
+          walletElement.className = 'HyperNFT-wallet-highlight';
           walletElement.textContent = address;
           walletElement.title = `Solana Wallet: ${address}`;
           walletElement.style.cssText = `
@@ -138,14 +138,14 @@ class LemoraContentScript {
 
   private showWalletActions(address: string, element: HTMLElement): void {
     // Remove existing popup if any
-    const existingPopup = document.querySelector('.lemora-wallet-popup');
+    const existingPopup = document.querySelector('.HyperNFT-wallet-popup');
     if (existingPopup) {
       existingPopup.remove();
     }
 
     // Create popup
     const popup = document.createElement('div');
-    popup.className = 'lemora-wallet-popup';
+    popup.className = 'HyperNFT-wallet-popup';
     popup.style.cssText = `
       position: absolute;
       background: white;
@@ -163,7 +163,7 @@ class LemoraContentScript {
       <div style="margin-bottom: 8px; font-weight: 600; color: #333;">
         ${address.slice(0, 8)}...${address.slice(-8)}
       </div>
-      <button class="lemora-action-btn" data-action="track" style="
+      <button class="HyperNFT-action-btn" data-action="track" style="
         display: block;
         width: 100%;
         padding: 8px 12px;
@@ -176,7 +176,7 @@ class LemoraContentScript {
         font-size: 12px;
         font-weight: 500;
       ">Track Wallet</button>
-      <button class="lemora-action-btn" data-action="copy" style="
+      <button class="HyperNFT-action-btn" data-action="copy" style="
         display: block;
         width: 100%;
         padding: 8px 12px;
@@ -188,7 +188,7 @@ class LemoraContentScript {
         cursor: pointer;
         font-size: 12px;
       ">Copy Address</button>
-      <button class="lemora-action-btn" data-action="view" style="
+      <button class="HyperNFT-action-btn" data-action="view" style="
         display: block;
         width: 100%;
         padding: 8px 12px;
@@ -209,7 +209,7 @@ class LemoraContentScript {
     // Add event handlers
     popup.addEventListener('click', (e) => {
       const target = e.target as HTMLElement;
-      if (target.classList.contains('lemora-action-btn')) {
+      if (target.classList.contains('HyperNFT-action-btn')) {
         const action = target.getAttribute('data-action');
         this.handleWalletAction(action!, address);
         popup.remove();
@@ -312,7 +312,7 @@ class LemoraContentScript {
     if (!currentSite) return;
 
     const widget = document.createElement('div');
-    widget.id = 'lemora-floating-widget';
+    widget.id = 'HyperNFT-floating-widget';
     widget.style.cssText = `
       position: fixed;
       bottom: 20px;
@@ -381,7 +381,7 @@ class LemoraContentScript {
 }
 
 // Initialize content script
-new LemoraContentScript();
+new HyperNFTContentScript();
 
 // Cleanup on page unload
 window.addEventListener('beforeunload', () => {

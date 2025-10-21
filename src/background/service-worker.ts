@@ -192,7 +192,7 @@ class BackgroundService {
     chrome.notifications.create(notificationId, {
       type: 'basic',
       iconUrl: '../assets/icons/icon48.png',
-      title: 'Lemora Wallet Tracker',
+      title: 'HyperNFT nft.generator',
       message: message
     });
 

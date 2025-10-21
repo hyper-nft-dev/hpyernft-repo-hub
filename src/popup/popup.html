@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lemora Wallet Tracker</title>
+  <title>HyperNFT - AI NFT Generator</title>
   <link rel="stylesheet" href="popup.css">
 </head>
 <body>
   <div class="header">
     <div class="logo">
-      <img src="../assets/icons/icon32.png" alt="Lemora">
-      <h1>Lemora</h1>
+      <img src="../assets/icons/icon32.png" alt="HyperNFT">
+      <h1>HyperNFT</h1>
     </div>
     <div class="status-indicator" id="connectionStatus">
       <span class="status-dot offline"></span>
@@ -19,9 +19,9 @@
   </div>
 
   <div class="tabs">
-    <button class="tab-button active" data-tab="dashboard">Dashboard</button>
-    <button class="tab-button" data-tab="wallets">Wallets</button>
-    <button class="tab-button" data-tab="signals">Signals</button>
+    <button class="tab-button active" data-tab="generator">Generator</button>
+    <button class="tab-button" data-tab="gallery">Gallery</button>
+    <button class="tab-button" data-tab="collection">Collection</button>
     <button class="tab-button" data-tab="settings">Settings</button>
   </div>
 
@@ -30,20 +30,20 @@
     <div id="dashboard" class="tab-panel active">
       <div class="stats-grid">
         <div class="stat-card">
-          <div class="stat-value" id="watchedWalletsCount">0</div>
-          <div class="stat-label">Watched Wallets</div>
+          <div class="stat-value" id="totalGenerated">0</div>
+          <div class="stat-label">NFTs Generated</div>
         </div>
         <div class="stat-card">
-          <div class="stat-value" id="totalTransactions">0</div>
-          <div class="stat-label">Total Transactions</div>
+          <div class="stat-value" id="totalMinted">0</div>
+          <div class="stat-label">NFTs Minted</div>
         </div>
         <div class="stat-card">
-          <div class="stat-value" id="activeSignals">0</div>
-          <div class="stat-label">Active Signals</div>
+          <div class="stat-value" id="successRate">0%</div>
+          <div class="stat-label">Success Rate</div>
         </div>
         <div class="stat-card">
-          <div class="stat-value" id="totalVolume">$0</div>
-          <div class="stat-label">Total Volume</div>
+          <div class="stat-value" id="storageUsed">0 MB</div>
+          <div class="stat-label">Storage Used</div>
         </div>
       </div>
 
@@ -54,7 +54,7 @@
             <div class="activity-icon">📊</div>
             <div class="activity-details">
               <div class="activity-title">No recent activity</div>
-              <div class="activity-subtitle">Add wallets to start tracking</div>
+              <div class="activity-subtitle">Add NFT prompts to generate</div>
             </div>
           </div>
         </div>
@@ -74,7 +74,7 @@
         <div class="wallet-item placeholder">
           <div class="wallet-info">
             <div class="wallet-address">No wallets added yet</div>
-            <div class="wallet-stats">Add a wallet address to start tracking</div>
+            <div class="wallet-stats">Add a prompt to generate your first NFT</div>
           </div>
         </div>
       </div>
@@ -140,11 +140,11 @@
       <div class="settings-section">
         <h3>About</h3>
         <div class="about-info">
-          <p>Lemora Wallet Tracker v1.0.0</p>
-          <p>Advanced Solana wallet monitoring and trading signals</p>
+          <p>HyperNFT v1.0.0</p>
+          <p>AI-driven NFT generation and minting for Solana</p>
           <div class="links">
-            <a href="https://x.com/Lemorabot" target="_blank">Twitter</a>
-            <a href="https://github.com/lemora-bot/lemora-bot" target="_blank">GitHub</a>
+            <a href="https://twitter.com/HyperNFT" target="_blank">Twitter</a>
+            <a href="https://github.com/hypernft/hypernft" target="_blank">GitHub</a>
           </div>
         </div>
       </div>

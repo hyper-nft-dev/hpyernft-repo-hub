@@ -1,5 +1,5 @@
 /**
- * Lemora Wallet Tracker - Transaction Filter
+ * HyperNFT nft.generator - Transaction Filter
  * Implements smart filtering for transaction data
  */
 

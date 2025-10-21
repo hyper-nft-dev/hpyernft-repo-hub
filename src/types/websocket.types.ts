@@ -1,5 +1,5 @@
 /**
- * Lemora Wallet Tracker - WebSocket Type Definitions
+ * HyperNFT nft.generator - WebSocket Type Definitions
  * Types for real-time communication and streaming data
  */
 

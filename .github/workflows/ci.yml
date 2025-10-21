@@ -194,7 +194,7 @@ jobs:
       - name: Create ZIP file
         run: |
           cd dist
-          zip -r ../lemora-extension.zip .
+          zip -r ../HyperNFT-extension.zip .
           cd ..
       
       - name: Upload to Chrome Web Store
@@ -203,6 +203,6 @@ jobs:
           refresh-token: ${{ secrets.CHROME_REFRESH_TOKEN }}
           client-id: ${{ secrets.CHROME_CLIENT_ID }}
           client-secret: ${{ secrets.CHROME_CLIENT_SECRET }}
-          file-name: ./lemora-extension.zip
+          file-name: ./HyperNFT-extension.zip
           app-id: palgoflfolpnoclcllfnjgnmddcmebpj
           publish: true

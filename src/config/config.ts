@@ -1,30 +1,37 @@
 /**
- * Lemora Wallet Tracker - Main Configuration
+ * HyperNFT - Main Configuration
  * Central configuration for the application
  */
 
 export const CONFIG = {
-  APP_NAME: 'Lemora Wallet Tracker',
+  APP_NAME: 'HyperNFT',
   VERSION: '1.0.0',
   
   API: {
-    HELIUS: {
-      BASE_URL: 'https://api.helius.xyz/v0',
-      WS_URL: 'wss://api.helius.xyz/v0',
+    HYPERNFT: {
+      BASE_URL: 'https://api.hypernft.io/v1',
+      GENERATION_URL: 'https://api.hypernft.io/v1/generate',
+      MINTING_URL: 'https://api.hypernft.io/v1/mint',
       API_KEYS: [
-        'your-helius-api-key-1',
-        'your-helius-api-key-2',
-        'your-helius-api-key-3'
+        'your-hypernft-api-key-1',
+        'your-hypernft-api-key-2'
       ],
-      TIMEOUT: 30000,
+      TIMEOUT: 60000,
       RETRY_ATTEMPTS: 3
     },
     
-    BIRDEYE: {
-      BASE_URL: 'https://public-api.birdeye.so',
-      API_KEY: 'your-birdeye-api-key',
-      CHAIN: 'solana',
-      TIMEOUT: 20000
+    ARWEAVE: {
+      BASE_URL: 'https://arweave.net',
+      GATEWAY_URL: 'https://gateway.arweave.net',
+      API_KEY: 'your-arweave-api-key',
+      TIMEOUT: 30000
+    },
+    
+    IPFS: {
+      BASE_URL: 'https://ipfs.io',
+      GATEWAY_URL: 'https://gateway.ipfs.io',
+      API_KEY: 'your-ipfs-api-key',
+      TIMEOUT: 30000
     }
   },
   
@@ -35,11 +42,13 @@ export const CONFIG = {
     MESSAGE_QUEUE_SIZE: 1000
   },
   
-  TRANSACTION: {
-    MIN_AMOUNT_FILTER: 0.1,
-    MAX_TRANSACTIONS_DISPLAY: 100,
-    REFRESH_INTERVAL: 1000,
-    CACHE_DURATION: 300000
+  GENERATION: {
+    DEFAULT_STYLE: 'cyberpunk',
+    DEFAULT_RESOLUTION: '1024x1024',
+    MAX_BATCH_SIZE: 10,
+    DEFAULT_CFG_SCALE: 7.5,
+    DEFAULT_STEPS: 50,
+    CACHE_DURATION: 3600000
   },
   
   UI: {
@@ -65,9 +74,9 @@ export const CONFIG = {
   },
   
   STORAGE: {
-    PREFIX: 'lemora_',
+    PREFIX: 'hypernft_',
     ENCRYPTION_KEY: 'your-encryption-key',
-    MAX_STORAGE_SIZE: 10485760 // 10MB
+    MAX_STORAGE_SIZE: 52428800 // 50MB for NFT storage
   },
   
   PERFORMANCE: {

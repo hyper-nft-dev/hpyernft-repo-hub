@@ -1,10 +1,10 @@
 openapi: 3.0.3
 info:
-  title: Lemora API
+  title: HyperNFT API
   description: |
-    API para el ecosistema Lemora, plataforma avanzada de tracking de wallets, señales en tiempo real, automatización y análisis AI para traders Web3.
+    API para el ecosistema HyperNFT, plataforma avanzada de tracking de wallets, señales en tiempo real, automatización y análisis AI para traders Web3.
   contact:
-    name: Equipo Lemora
+    name: Equipo HyperNFT
     email: support@arxtrack.fun
   version: 1.0.0
 servers:
@@ -86,7 +86,7 @@ paths:
               example:
               - id: sig_001
                 type: BUY
-                token: Lemora
+                token: HyperNFT
                 confidence: 0.92
                 timestamp: 2025-08-08T07:16:41Z
               - id: sig_002
@@ -108,7 +108,7 @@ paths:
             example:
               wallet: 4kD3bF2xE9j8YsEPrLfZ1a7C2wz...
               action: BUY
-              token: Lemora
+              token: HyperNFT
               amount: 50
               slippage: 1
         required: true
@@ -169,9 +169,9 @@ paths:
               schema:
                 $ref: "#/components/schemas/inline_response_200_3"
               example:
-                summary: Wallet acumula tokens Lemora y distribuye USDC.
+                summary: Wallet acumula tokens HyperNFT y distribuye USDC.
                 recommendations:
-                - Considera mantener Lemora corto plazo.
+                - Considera mantener HyperNFT corto plazo.
                 - Monitorea liquidez de pools USDC.
 components:
   schemas:

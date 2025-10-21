@@ -1,5 +1,5 @@
 /**
- * Lemora Wallet Tracker - Three.js Animated Cube
+ * HyperNFT nft.generator - Three.js Animated Cube
  * Renders a 3D animated cube for UI enhancement
  */
 

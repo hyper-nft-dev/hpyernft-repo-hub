@@ -2,7 +2,7 @@
 
 ## Component Architecture
 
-The Lemora component library implements a modular, reusable UI system built with React 18 and TypeScript. All components follow atomic design principles and are optimized for performance and accessibility.
+The HyperNFT component library implements a modular, reusable UI system built with React 18 and TypeScript. All components follow atomic design principles and are optimized for performance and accessibility.
 
 ## Component Hierarchy
 

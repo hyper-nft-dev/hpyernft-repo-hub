@@ -2,7 +2,7 @@
 
 ## Overview
 
-The service layer implements the core business logic for the Lemora AI-powered wallet tracker. This layer provides abstraction between the UI components and external APIs, ensuring scalability, maintainability, and testability.
+The service layer implements the core business logic for the HyperNFT AI-powered nft.generator. This layer provides abstraction between the UI components and external APIs, ensuring scalability, maintainability, and testability.
 
 ## Service Catalog
 

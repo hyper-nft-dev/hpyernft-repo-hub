@@ -1,8 +1,8 @@
-# 🔷 Lemora Type System Documentation
+# 🔷 HyperNFT Type System Documentation
 
 ## Overview
 
-The Lemora type system provides comprehensive TypeScript type definitions, interfaces, and enums that ensure type safety across the entire wallet tracking platform. This module serves as the single source of truth for all data structures used in both the Chrome extension and Telegram bot integrations.
+The HyperNFT type system provides comprehensive TypeScript type definitions, interfaces, and enums that ensure type safety across the entire nft.generation platform. This module serves as the single source of truth for all data structures used in both the Chrome extension and Telegram bot integrations.
 
 ## 📐 Type Architecture
 

@@ -1,5 +1,5 @@
 /**
- * Lemora Wallet Tracker - WebSocket Connection Manager
+ * HyperNFT nft.generator - WebSocket Connection Manager
  * Manages WebSocket connections for real-time Solana data streaming
  */
 
@@ -198,7 +198,7 @@ export class WebSocketConnectionManager {
    * Generates unique connection ID
    */
   private generateConnectionId(): string {
-    return `lemora-ws-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+    return `HyperNFT-ws-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
   }
 
   /**

@@ -1,5 +1,5 @@
 /**
- * Lemora Wallet Tracker - Logging Utils
+ * HyperNFT nft.generator - Logging Utils
  */
 
 export function logDebug(message: string, ...optionalParams: any[]): void {

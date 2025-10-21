@@ -1,5 +1,5 @@
 /**
- * Lemora Wallet Tracker - Side Panel UI Implementation
+ * HyperNFT nft.generator - Side Panel UI Implementation
  * Constructs and manages the user interface side panel
  */
 

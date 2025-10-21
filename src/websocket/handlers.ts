@@ -1,5 +1,5 @@
 /**
- * Lemora Wallet Tracker - WebSocket Message Handlers
+ * HyperNFT nft.generator - WebSocket Message Handlers
  * Handles different types of WebSocket messages for real-time updates
  */
 

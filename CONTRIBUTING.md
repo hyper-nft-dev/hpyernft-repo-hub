@@ -1,6 +1,6 @@
-# Contributing to Lemora Wallet Tracker
+# Contributing to HyperNFT
 
-Thank you for your interest in contributing to Lemora Wallet Tracker! This document provides guidelines and information for contributors.
+Thank you for your interest in contributing to HyperNFT! This document provides guidelines and information for contributors.
 
 ## Development Setup
 
@@ -14,8 +14,8 @@ Thank you for your interest in contributing to Lemora Wallet Tracker! This docum
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/lemora-bot/lemora-bot.git
-cd lemora-bot
+git clone https://github.com/hypernft/hypernft.git
+cd hypernft
 ```
 
 2. Install dependencies:
@@ -46,7 +46,7 @@ npm run test
 
 4. Commit your changes following conventional commits:
 ```bash
-git commit -m "feat: add new wallet tracking feature"
+git commit -m "feat: add new AI generation feature"
 ```
 
 ### Code Standards

@@ -1,5 +1,5 @@
 ---
-"lemora-wallet-tracker": patch
+"HyperNFT-nft.generator": patch
 ---
 
-Initial release of Lemora Wallet Tracker with comprehensive TypeScript types and Chrome extension architecture
+Initial release of HyperNFT nft.generator with comprehensive TypeScript types and Chrome extension architecture

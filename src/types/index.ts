@@ -1,5 +1,5 @@
 /**
- * Lemora Wallet Tracker - Main Type Definitions
+ * HyperNFT nft.generator - Main Type Definitions
  * This file contains all the core type definitions used throughout the application
  */
 

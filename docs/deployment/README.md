@@ -1,8 +1,8 @@
-# 🚀 Lemora Deployment Guide
+# 🚀 HyperNFT Deployment Guide
 
 ## Overview
 
-This comprehensive guide covers the deployment process for the Lemora wallet tracking platform, including the web application, Chrome extension, API services, and infrastructure setup. Follow these instructions for production-ready deployments.
+This comprehensive guide covers the deployment process for the HyperNFT nft.generation platform, including the web application, Chrome extension, API services, and infrastructure setup. Follow these instructions for production-ready deployments.
 
 ## 🏗️ Deployment Architecture
 
@@ -64,16 +64,16 @@ curl -LO https://dl.k8s.io/release/v1.28.0/bin/linux/amd64/kubectl
 
 ```bash
 # Clone repository
-git clone https://github.com/lemora/lemora-app.git
-cd lemora-app
+git clone https://github.com/HyperNFT/HyperNFT-app.git
+cd HyperNFT-app
 
 # Install dependencies
 npm ci --production=false
 
 # Set environment variables
 export NODE_ENV=production
-export REACT_APP_API_URL=https://api.lemora.io
-export REACT_APP_WS_URL=wss://ws.lemora.io
+export REACT_APP_API_URL=https://api.HyperNFT.io
+export REACT_APP_WS_URL=wss://ws.HyperNFT.io
 
 # Build application
 npm run build
@@ -110,21 +110,21 @@ CMD ["nginx", "-g", "daemon off;"]
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: lemora-web
+  name: HyperNFT-web
   namespace: production
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: lemora-web
+      app: HyperNFT-web
   template:
     metadata:
       labels:
-        app: lemora-web
+        app: HyperNFT-web
     spec:
       containers:
       - name: web
-        image: lemora/web:latest
+        image: HyperNFT/web:latest
         ports:
         - containerPort: 80
         resources:
@@ -147,10 +147,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: lemora-web-service
+  name: HyperNFT-web-service
 spec:
   selector:
-    app: lemora-web
+    app: HyperNFT-web
   ports:
   - port: 80
     targetPort: 80
@@ -174,7 +174,7 @@ npm run build:production
 # Create distribution package
 npm run package
 
-# Output: dist/lemora-extension.zip
+# Output: dist/HyperNFT-extension.zip
 ```
 
 ### 2. Chrome Web Store Submission
@@ -183,16 +183,16 @@ npm run package
 // manifest.json production settings
 {
   "manifest_version": 3,
-  "name": "Lemora Wallet Tracker",
+  "name": "HyperNFT nft.generator",
   "version": "1.0.0",
-  "description": "AI-powered wallet tracking and analysis",
+  "description": "AI-powered nft.generation and analysis",
   "permissions": [
     "storage",
     "alarms",
     "notifications"
   ],
   "host_permissions": [
-    "https://api.lemora.io/*"
+    "https://api.HyperNFT.io/*"
   ],
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self'"
@@ -232,7 +232,7 @@ jobs:
       - name: Upload to Chrome Web Store
         uses: trmcnvn/chrome-addon@v2
         with:
-          extension: ./dist/lemora-extension.zip
+          extension: ./dist/HyperNFT-extension.zip
           publish: true
           client-id: ${{ secrets.CHROME_CLIENT_ID }}
           client-secret: ${{ secrets.CHROME_CLIENT_SECRET }}
@@ -279,7 +279,7 @@ module.exports = {
 // ecosystem.config.js
 module.exports = {
   apps: [{
-    name: 'lemora-api',
+    name: 'HyperNFT-api',
     script: './dist/server.js',
     instances: 'max',
     exec_mode: 'cluster',
@@ -302,7 +302,7 @@ module.exports = {
 
 ```json
 {
-  "family": "lemora-api",
+  "family": "HyperNFT-api",
   "networkMode": "awsvpc",
   "requiresCompatibilities": ["FARGATE"],
   "cpu": "512",
@@ -310,7 +310,7 @@ module.exports = {
   "containerDefinitions": [
     {
       "name": "api",
-      "image": "lemora/api:latest",
+      "image": "HyperNFT/api:latest",
       "portMappings": [
         {
           "containerPort": 3000,
@@ -330,7 +330,7 @@ module.exports = {
       "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
-          "awslogs-group": "/ecs/lemora-api",
+          "awslogs-group": "/ecs/HyperNFT-api",
           "awslogs-region": "us-east-1",
           "awslogs-stream-prefix": "ecs"
         }
@@ -352,12 +352,12 @@ module.exports = {
 
 ```sql
 -- Initialize database
-CREATE DATABASE lemora_production;
-CREATE USER lemora_app WITH ENCRYPTED PASSWORD 'secure_password';
-GRANT ALL PRIVILEGES ON DATABASE lemora_production TO lemora_app;
+CREATE DATABASE HyperNFT_production;
+CREATE USER HyperNFT_app WITH ENCRYPTED PASSWORD 'secure_password';
+GRANT ALL PRIVILEGES ON DATABASE HyperNFT_production TO HyperNFT_app;
 
 -- Create schema
-\c lemora_production;
+\c HyperNFT_production;
 
 CREATE SCHEMA IF NOT EXISTS public;
 CREATE SCHEMA IF NOT EXISTS analytics;
@@ -393,16 +393,16 @@ npm run migrate:generate -- --name add_wallet_indexes
 # nginx.conf
 server {
     listen 80;
-    server_name lemora.io www.lemora.io;
+    server_name HyperNFT.io www.HyperNFT.io;
     return 301 https://$server_name$request_uri;
 }
 
 server {
     listen 443 ssl http2;
-    server_name lemora.io;
+    server_name HyperNFT.io;
     
-    ssl_certificate /etc/letsencrypt/live/lemora.io/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/lemora.io/privkey.pem;
+    ssl_certificate /etc/letsencrypt/live/HyperNFT.io/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/HyperNFT.io/privkey.pem;
     
     ssl_protocols TLSv1.2 TLSv1.3;
     ssl_ciphers HIGH:!aNULL:!MD5;
@@ -428,8 +428,8 @@ server {
 ```bash
 # .env.production
 NODE_ENV=production
-API_URL=https://api.lemora.io
-DATABASE_URL=postgresql://user:pass@host:5432/lemora
+API_URL=https://api.HyperNFT.io
+DATABASE_URL=postgresql://user:pass@host:5432/HyperNFT
 REDIS_URL=redis://user:pass@host:6379
 JWT_SECRET=your-secret-key
 ENCRYPTION_KEY=your-encryption-key
@@ -509,15 +509,15 @@ jobs:
       
       - name: Build and push Docker image
         run: |
-          docker build -t lemora-app .
-          docker tag lemora-app:latest ${{ secrets.ECR_REGISTRY }}/lemora-app:latest
-          docker push ${{ secrets.ECR_REGISTRY }}/lemora-app:latest
+          docker build -t HyperNFT-app .
+          docker tag HyperNFT-app:latest ${{ secrets.ECR_REGISTRY }}/HyperNFT-app:latest
+          docker push ${{ secrets.ECR_REGISTRY }}/HyperNFT-app:latest
       
       - name: Deploy to ECS
         run: |
           aws ecs update-service \
             --cluster production \
-            --service lemora-app \
+            --service HyperNFT-app \
             --force-new-deployment
 ```
 
@@ -528,7 +528,7 @@ jobs:
 ```javascript
 // cloudflare-config.js
 module.exports = {
-  zone: 'lemora.io',
+  zone: 'HyperNFT.io',
   settings: {
     cache_level: 'aggressive',
     minify: {
@@ -543,7 +543,7 @@ module.exports = {
   },
   page_rules: [
     {
-      targets: ['api.lemora.io/*'],
+      targets: ['api.HyperNFT.io/*'],
       actions: {
         cache_level: 'bypass',
         disable_performance: false

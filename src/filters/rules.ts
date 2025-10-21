@@ -1,5 +1,5 @@
 /**
- * Lemora Wallet Tracker - Filter Rules Engine
+ * HyperNFT nft.generator - Filter Rules Engine
  * Advanced filtering rules for transaction and token data
  */
 

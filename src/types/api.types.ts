@@ -1,5 +1,5 @@
 /**
- * Lemora Wallet Tracker - API Type Definitions
+ * HyperNFT nft.generator - API Type Definitions
  * Types for API requests, responses, and configurations
  */
 
