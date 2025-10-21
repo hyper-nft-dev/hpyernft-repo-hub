@@ -192,6 +192,17 @@ hypernft/
 └── dist/                # Distribution files
 ```
 
+## Pricing
+
+| Plan | Price | Generations/Month | Features |
+|------|-------|-------------------|----------|
+| Free | $0 | 10 | Basic styles, 1024x1024 max |
+| Creator | $29/mo | 500 | All styles, 2048x2048, priority queue |
+| Pro | $99/mo | 2,000 | Custom models, batch minting, API access |
+| Enterprise | Custom | Unlimited | Dedicated infrastructure, custom training |
+
+*Solana network fees apply separately (~0.01 SOL per mint)*
+
 ## Requirements
 
 - Node.js 16.0.0 or higher
