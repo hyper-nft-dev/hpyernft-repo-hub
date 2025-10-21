@@ -99,6 +99,13 @@ HyperNFT's minting layer uses the latest Solana SDKs (Anchor & Solana-Web3.js) f
 
 All assets generated through HyperNFT are uploaded to Arweave and IPFS through a unified storage handler. This ensures data persistence and decentralization while maintaining fast retrieval times via Solana RPC indexing.
 
+**Storage Features:**
+- Permanent storage via Arweave blockchain
+- Redundant IPFS pinning across multiple nodes
+- Automatic CDN distribution for fast global access
+- Metadata versioning and immutability guarantees
+- Support for both bundled and individual uploads
+
 For large-scale NFT collections, the system supports parallelized uploads, using chunked Arweave transactions and IPFS pinning via cluster nodes.
 
 ## Key Features
