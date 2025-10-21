@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "HyperNFT",
   "version": "1.0.0",
-  "description": "AI-driven NFT generation and deployment framework for Solana blockchain with automated minting pipeline",
+  "description": "Create and mint AI-generated NFTs on Solana. Transform text prompts into unique digital artwork.",
   "permissions": [
     "storage",
     "activeTab",
