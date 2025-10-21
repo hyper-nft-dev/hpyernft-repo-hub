@@ -1,6 +1,6 @@
 {
   "name": "hypernft",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Advanced AI-powered NFT generation framework with automated minting for Solana blockchain",
   "main": "dist/index.js",
   "scripts": {
