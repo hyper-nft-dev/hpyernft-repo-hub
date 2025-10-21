@@ -7,7 +7,7 @@
 
 ![Solana](https://img.shields.io/badge/-Solana-14F195?logo=solana&logoColor=black) ![AI](https://img.shields.io/badge/-AI-FF6F00) ![NFT](https://img.shields.io/badge/-NFT-9945FF) ![Metaplex](https://img.shields.io/badge/-Metaplex-blueviolet) ![TypeScript](https://img.shields.io/badge/-TypeScript-007ACC?logo=typescript&logoColor=white) ![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=black) ![Arweave](https://img.shields.io/badge/-Arweave-222326) ![WebAssembly](https://img.shields.io/badge/-WASM-654FF0) ![Machine Learning](https://img.shields.io/badge/-ML-orange) ![Diffusion](https://img.shields.io/badge/-Diffusion-red)
 
-### Advanced AI-Driven NFT Generation and Deployment Framework for Solana
+### AI-Powered NFT Generation and Minting Platform for Solana
 
 </div>
 
