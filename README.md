@@ -184,6 +184,13 @@ hypernft/
 └── dist/                # Distribution files
 ```
 
+## Requirements
+
+- Node.js 16.0.0 or higher
+- npm 8.0.0 or higher
+- Chrome browser (version 88+)
+- Solana wallet (Phantom, Solflare, or Backpack)
+
 ## Quick Start
 
 ### Installation
