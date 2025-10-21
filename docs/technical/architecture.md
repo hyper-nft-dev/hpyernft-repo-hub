@@ -2,9 +2,7 @@
 
 ## Overview
 
-The HyperNFT nft.generator utilizes a modular architecture for scalability, maintainability, and performance. The system comprises several components, each responsible for specific functions.
-
----
+HyperNFT utilizes a modular architecture designed for scalability, maintainability, and high performance. The system comprises several components working together to deliver AI-powered NFT generation and minting capabilities.
 
 ## System Components
 
@@ -13,16 +11,17 @@ The HyperNFT nft.generator utilizes a modular architecture for scalability, main
 - Provides a responsive UI and real-time updates
 - Directly interacts with the backend for data rendering and user interactions
 
-### 2. **Backend API**
-- Built with Node.js and Express
-- Handles requests from the frontend and external clients
-- Manages authentication, data retrieval, and processing
+### 2. **AI Generation Service**
+- Powered by advanced diffusion models
+- Processes text prompts and generates high-quality NFT artwork
+- Supports multiple artistic styles and resolutions
+- Handles batch generation requests
 
-### 3. **Data Processing Layer**
-- Comprised of microservices for separate functionalities
-- Processes real-time data streams and aggregates results
-
----
+### 3. **Blockchain Integration Layer**
+- Handles Solana blockchain interactions
+- Manages NFT minting via Metaplex
+- Supports compressed NFTs and collection verification
+- Integrates with Arweave and IPFS for storage
 
 ## Architectural Diagram
 
@@ -36,17 +35,20 @@ The HyperNFT nft.generator utilizes a modular architecture for scalability, main
 - Initiated from the frontend; the backend API handles the authentication and request processing
 - Responsive UI updates based on real-time data
 
-### 2. **Data Collection**
-- Distributed microservices collect data from Solana blockchain nodes
-- Enriched with additional data from third-party APIs
+### 2. **AI Processing**
+- AI models process user prompts and style parameters
+- Generate unique artwork using latent diffusion
+- Apply style transfer and quality enhancement
 
-### 3. **Real-Time Processing**
-- Event-driven architecture utilizes message queues for processing
-- Real-time analytics and AI models provide insights and alerts
+### 3. **Storage and Upload**
+- Upload generated images to Arweave for permanent storage
+- Create and store metadata following Metaplex standards
+- Generate IPFS hashes for decentralized access
 
-### 4. **Data Storage**
-- Uses a combination of SQL and NoSQL databases for optimal storage and retrieval
-- Caches frequently accessed data for improved performance
+### 4. **Minting Execution**
+- Execute Solana transactions to mint NFTs
+- Verify collection membership and royalty configuration
+- Return transaction signatures and mint addresses
 
 ### 5. **Security**
 - Implements industry-standard encryption for data in transit and at rest
@@ -56,15 +58,15 @@ The HyperNFT nft.generator utilizes a modular architecture for scalability, main
 
 ## Microservices
 
-### **NFT Generation Service**
-- Continuously monitors specified wallets for activity
-- Sends notifications based on predefined triggers and conditions
+### **AI Generation Service**
+- Manages prompt processing and model inference
+- Handles style presets and parameter optimization
+- Supports batch generation for large collections
 
-### **Transaction Analysis Service**
-- Provides deep insights into individual transactions
-- Leverages AI for risk and strategy analysis
-
----
+### **Minting Service**
+- Coordinates with Solana blockchain for NFT creation
+- Manages metadata upload to Arweave and IPFS
+- Verifies transactions and handles errors
 
 ## Scaling Strategy
 
@@ -87,4 +89,4 @@ For developers interested in contributing, please refer to our [Contributing Gui
 
 ---
 
-For further information, contact us at support@HyperNFT-bot.com.
+For further information, contact us at support@hypernft.io.
