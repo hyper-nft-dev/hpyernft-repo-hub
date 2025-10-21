@@ -45,10 +45,13 @@ The foundation of HyperNFT lies in its **AI Art Engine**, a collection of fine-t
 
 **Core Features:**
 - Prompt-to-image generation using custom AI models
-- Optional style presets (cyberpunk, minimalism, 3D realism, pixel art)
-- Negative prompting for refinement
-- High-resolution rendering up to 2048x2048
-- Batch generation for multi-trait NFT sets
+- Seven style presets: cyberpunk, minimalism, 3D realism, pixel art, vaporwave, abstract, anime
+- Negative prompting for refined quality control
+- High-resolution rendering up to 2048x2048 pixels
+- Batch generation for multi-trait NFT collections
+- Seed-based reproducibility for consistent outputs
+- CFG scale adjustment (1-20) for prompt adherence
+- Configurable inference steps (20-150) for quality tuning
 
 Each generation task returns structured outputs, including generated images, embedding vectors, and parameter metadata used for reproducibility and rarity mapping.
 
