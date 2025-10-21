@@ -40,7 +40,9 @@
     "digital-art",
     "minting",
     "cnft",
-    "compressed-nft"
+    "compressed-nft",
+    "stable-diffusion",
+    "text-to-image"
   ],
   "author": "HyperNFT Team",
   "license": "MIT",
