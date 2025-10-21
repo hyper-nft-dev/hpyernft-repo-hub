@@ -313,6 +313,22 @@ Modern, responsive interface with real-time generation preview and minting statu
 - ESLint with TypeScript support
 - Prettier for code formatting
 
+## Security
+
+### Best Practices
+
+- API keys are encrypted at rest and in transit
+- Never store private keys in the extension
+- Wallet interactions require explicit user approval
+- All transactions are signed client-side
+- Regular security audits and penetration testing
+
+### Data Privacy
+
+- Generated images are stored on decentralized networks
+- No personal data collection beyond necessary API usage
+- GDPR and CCPA compliant
+
 ## FAQ
 
 **Q: What blockchains are supported?**  
