@@ -350,6 +350,23 @@ A: Yes, each generation uses randomized seeds unless explicitly specified.
 
 We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
 
+## Roadmap
+
+### Q1 2025
+- Multi-language support (Spanish, Chinese, Japanese)
+- Advanced trait generation for collections
+- API v2 with enhanced features
+
+### Q2 2025
+- EVM chain support (Ethereum, Polygon)
+- Mobile app for iOS and Android
+- Collaborative generation features
+
+### Q3 2025
+- Video NFT generation
+- 3D model generation
+- Integration with major NFT marketplaces
+
 ## License
 
 MIT License - see [LICENSE](LICENSE) file for details.
