@@ -15,9 +15,9 @@
 
 ## Overview
 
-HyperNFT is an advanced AI-driven NFT generation and deployment framework built for the Solana ecosystem. It enables creators, developers, and NFT projects to generate, customize, and mint high-fidelity digital artwork on-chain — powered by cutting-edge generative AI and optimized for Solana's speed, scalability, and low transaction costs.
+HyperNFT is an advanced AI-driven NFT generation and deployment framework built for the Solana ecosystem. It enables creators, developers, and NFT projects to generate, customize, and mint high-fidelity digital artwork on-chain, powered by cutting-edge generative AI and optimized for Solana's speed, scalability, and low transaction costs.
 
-Unlike traditional NFT creation tools that rely on manual design and metadata compilation, HyperNFT uses deep learning models and prompt-to-art generation pipelines to automate the entire creative process — from concept ideation to on-chain minting — in seconds.
+Unlike traditional NFT creation tools that rely on manual design and metadata compilation, HyperNFT uses deep learning models and prompt-to-art generation pipelines to automate the entire creative process from concept ideation to on-chain minting in seconds.
 
 ---
 
@@ -32,10 +32,10 @@ HyperNFT merges AI generation with Solana-native NFT infrastructure, providing a
 
 The platform abstracts away all the technical layers of image generation, metadata assembly, and blockchain interactions, allowing users to focus purely on creativity. Behind the scenes, HyperNFT integrates multiple services working in synergy:
 
-- **AI Model Engine** — processes text prompts and generates unique, high-resolution artwork based on latent diffusion architectures
-- **Metadata Composer** — automatically constructs the JSON metadata required by the Solana NFT standard (Metaplex Metadata Standard)
-- **Minting Layer** — connects to Solana's runtime to mint tokens using the latest SPL and Metaplex token standards
-- **Storage Layer** — integrates with decentralized storage networks such as Arweave and IPFS for permanent, tamper-proof image hosting
+- **AI Model Engine** - processes text prompts and generates unique, high-resolution artwork based on latent diffusion architectures
+- **Metadata Composer** - automatically constructs the JSON metadata required by the Solana NFT standard (Metaplex Metadata Standard)
+- **Minting Layer** - connects to Solana's runtime to mint tokens using the latest SPL and Metaplex token standards
+- **Storage Layer** - integrates with decentralized storage networks such as Arweave and IPFS for permanent, tamper-proof image hosting
 
 ## Technical Architecture
 
@@ -108,7 +108,7 @@ For large-scale NFT collections, the system supports parallelized uploads, using
 | AI NFT Generation | Generate NFTs using AI text prompts with multiple style models and configurations |
 | Multi-Chain Ready (Solana First) | Primary integration with Solana, with planned support for EVM and SVM chains |
 | Collection Automation | Create collections of up to 10,000 NFTs automatically, including metadata, rarity, and traits |
-| No-Code Interface | Simplified user experience for creators — no blockchain or coding knowledge required |
+|| No-Code Interface | Simplified user experience for creators without requiring blockchain or coding knowledge |
 | Developer SDK | HyperNFT SDK allows programmatic generation and minting for Solana-based applications |
 | Compression Support | Generate large NFT collections using Solana's compressed NFT standard for scalability |
 | Royalty & Metadata Control | Full access to royalty configuration, creators list, and property management |
